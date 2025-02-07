@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+    <title>BAI33</title>
+</head>
+<body>
+    <h1 style="font-size: 50px;">Bài 33: PSEUDO-CLASSES</h1> <hr class="hr-custom">
+    <p>*Pseudo-Classes</p>
+<table style="width: 100%;">
+    <tr id="th">
+        <th>STT</th>
+        <th>Pseudo-Classes</th>
+        <th>Ví dụ</th>
+        <th>Ý nghĩa</th>
+    </tr>
+    <tr id="td">
+        <td>1.</td>
+        <td>:hover</td>
+        <td>p:hover</td>
+        <td>Chọn các thẻ p khi di chuột qua</td>
+    </tr>
+    <tr id="td">
+        <td>2.</td>
+        <td>:active</td>
+        <td>a:active</td>
+        <td>Chọn các thẻ a khi nhấn giữ chuột</td>
+    </tr>
+    <tr id="td">
+        <td>3.</td>
+        <td>:link</td>
+        <td>a:link</td>
+        <td>Chọn các thẻ a có liên kết chưa click vào</td>
+    </tr>
+    <tr id="td">
+        <td>4.</td>
+        <td>:visited</td>
+        <td>a:visited</td>
+        <td>Chọn các thẻ a có chứa liên kết đã click truy cập</td>
+    </tr>
+    <tr id="td">
+        <td>5.</td>
+        <td>:empty</td>
+        <td>div:empty</td>
+        <td>Chọn các thẻ div không có nội dung</td>
+    </tr>
+    <tr id="td">
+        <td>6.</td>
+        <td>:target</td>
+        <td>#home:target</td>
+        <td>Chọn thẻ id="home" khi có trên URL có hash tương ứng. Ví dụ: https://domain.com/#home</td>
+    </tr>
+</table>
+<p style="color: red; font-size: 35px;">Cú pháp chung</p>
+<p style="font-size: 25px;">selector: Pseudo-classes { <br>
+    /*khối lệnh css*/ <br>
+    property:value <br>
+}</p>
+<p id="vd">Ví dụ:</p>
+<p class="line">Xin chào</p>
+<p id="line1">Hãy di chuột vào em</p>
+<a href="https://facebook.com" class="click" target="_blank">phở bò nam định</a>
+<a href="https://vietnamnet.vn/" class="click" target="_blank">phở bò nam định</a>
+<h2>1.:hover</h2>
+<img src="img/anh1.png" alt="anh1" width="900">
+<h2>2.:active</h2>
+<img src="img/anh2.png" alt="anh2" width="900">
+<h2>3.:link + :visited</h2>
+<img src="img/anh3.png" alt="anh3" width="900">
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

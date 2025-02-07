@@ -1,0 +1,60 @@
+body{
+    background-color: bisque;
+} 
+.hr-custom {
+    border: 0;
+    height: 3px;
+    background: #000000;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc)
+}
+table, th, td{
+    border: 1px solid black;
+    font-weight: bolder;
+    text-align: center;
+    #th{
+        background-color: aqua;
+    }
+    #td{
+        background-color: yellow;
+    }
+}
+p{
+    font-size: 35px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 35px;
+    text-decoration-line: underline;
+}
+#vd{
+    color: red;
+    font-size: 20px;
+    text-decoration-line: underline;
+}
+a{
+    font-size: 30px;
+}
+/* 1.:hover - tác dụng lên selector khi di chuột qua*/
+/* .line:hover{
+    color: red;
+}
+#line1:hover{
+    color: blue;
+    font-size: 40px;
+} */
+ /* 2.:active - tác dụng lên selector khi nhấn giữ chuột*/
+ /* .line:active {
+    color: red;
+    font-size: 40px;
+ }
+ #line1:active{
+    color: red;
+    font-size: 40px;
+ } */
+  /* 3.:link - tác dụng lên selector khi chưa click vào truy cập */
+/* .click:link{
+    color: black;
+} */
+.click:visited{
+    color: red;
+}
