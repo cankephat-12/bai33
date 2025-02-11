@@ -1,4 +1,5 @@
 body{
+    font-family: sans-serif;
     background-color: bisque;
 } 
 .hr-custom {
@@ -9,10 +10,10 @@ body{
 }
 table, th, td{
     border: 1px solid black;
-    font-weight: bolder;
     text-align: center;
+    font-weight: bold;
     #th{
-        background-color: aqua;
+        background-color: aqua
     }
     #td{
         background-color: yellow;
@@ -20,7 +21,7 @@ table, th, td{
 }
 p{
     font-size: 35px;
-    font-weight: bolder;
+    font-weight: bolder; 
 }
 h2{
     font-size: 35px;
@@ -55,6 +56,46 @@ a{
 /* .click:link{
     color: black;
 } */
-.click:visited{
+ /* 4. Tác dụng lên selector khi đã click truy cập vào link  */
+/* .click:visited{
     color: red;
-}
+} */
+ /* 5. Tác dụng lên các thẻ div không có nội dung  */
+ .elm:empty{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+ }
+ .elm{
+    width: 100px;
+    height: 100px;
+    background-color: red;}
+  /* 6. Chọn thẻ id="#" khi có trên URL có hash tương ứng
+h2:target {
+    color: blue;
+} */
+ /* 7. Chọn các thẻ p là thẻ con đầu tiên
+p:first-child {
+    color: red;
+    font-size:30px;
+}  */
+/* 8.  Chọn các thẻ p là thẻ con cuối cùng
+P:last-child{
+    color: red;
+    font-size: 30px;
+} */
+/* 9. Chọn các thẻ p là thẻ con thứ 2 từ trên xuống */
+/* p:nth-child(3n+1) {
+    color: red; 
+    font-size: 30px;
+} */
+/* 10. Chọn các thẻ p là thẻ con thứ 2 tính từ cuối lên */
+/* p:nth-last-child(3n+1) {
+    color: red;
+    font-size: 30px;
+} */
+ /* 11. Chọn các thẻ p là thẻ con duy nhất */
+ /* p:only-child {
+    color: red;
+    font-size: 30px;
+ } */

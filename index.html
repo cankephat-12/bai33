@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 style="font-size: 50px;">Bài 33: PSEUDO-CLASSES</h1> <hr class="hr-custom">
-    <p>*Pseudo-Classes</p>
+    <p style="font-size: 40px; font-weight: bolder;">*Pseudo-Classes</p>
 <table style="width: 100%;">
     <tr id="th">
         <th>STT</th>
@@ -53,23 +53,161 @@
         <td>#home:target</td>
         <td>Chọn thẻ id="home" khi có trên URL có hash tương ứng. Ví dụ: https://domain.com/#home</td>
     </tr>
+        <tr id="th">
+            <td>/</td>
+            <td colspan="3" style="text-align: left;">Child selector</td>
+        </tr>
+        <tr id="td">
+            <td>7.</td>
+            <td>:first-child</td>
+            <td>p:first-child </td>
+            <td>Chọn các thẻ p là thẻ con đầu tiên</td>
+        </tr>
+        <tr id="td">
+            <td>8.</td>
+            <td>:last-child</td>
+            <td>p:last-child </td>
+            <td>Chọn các thẻ p là thẻ con cuối cùng</td>
+        </tr>
+        <tr id="td">
+            <td>9.</td>
+            <td>:nth-child(n)</td>
+            <td>p:nth-child(2)</td>
+            <td>Chọn các thẻ p là thẻ con thứ 2 từ trên xuống</td>
+        </tr>
+        <tr id="td">
+            <td>10.</td>
+            <td>:nth-last-child(n)</td>
+            <td>p:nth-last-child(2)</td>
+            <td>Chọn các thẻ p là thẻ con thứ 2 tính từ cuối lên</td>
+        </tr>
+        <tr id="td">
+            <td>11.</td>
+            <td>:only-child</td>
+            <td>p:only-child</td>
+            <td>Chọn các thẻ p là thẻ con duy nhất</td>
+        </tr>
+        <tr id="th">
+            <td>/</td>
+            <td colspan="3" style="text-align:left">Type selector</td>
+        </tr>
+        <tr id="td">
+            <td>12.</td>
+            <td>first-of-type </td>
+            <td>p:first-of-type </td>
+            <td>Chọn các thẻ p xuất hiện đâu tiên trong thẻ cha</td>
+        </tr>
+        <tr id="td">
+            <td>13.</td>
+            <td>:last-of-type</td>
+            <td>p:last-of-type</td>
+            <td>Chọn các thẻ p xuất hiện cuối cùng trong thẻ cha</td>
+        </tr>
+        <tr id="td">
+            <td>14.</td>
+            <td>:nth-of-type(2)</td>
+            <td>p:nth-of-type(2)</td>
+            <td>Chọn các thẻ xuất hiện thứ n trong thẻ cha</td>
+        </tr>
+        <tr id="td">
+            <td>15.</td>
+            <td>:nth-last-of-type(2)</td>
+            <td>p:nth-last-of-type(2)</td>
+            <td>Chọn các thẻ p xuất hiện thứ n trong thẻ cha, tính từ cuối lên</td>
+        </tr>
+        <tr id="td">
+            <td>16.</td>
+            <td>only-of-type</td>
+            <td>p:only-of-type</td>
+            <td>Chọn các thẻ p xuất hiện duy nhất trong thẻ cha</td>
+        </tr>
+        <tr id="td">
+            <td>17.</td>
+            <td>:not(selector)</td>
+            <td>.top:not(p) </td>
+            <td>Chọn các thẻ có class="top" loại trừ thẻ p</td>
+        </tr>
+    </table>
 </table>
+<p style="color: red;">Lưu ý 9-10:</p>
+<p>- odd(nhảy theo n lẻ)</p>
+<p>- even(nhảy theo n chẵn)</p>
+<p>- 2n+1(nhảy theo step mong muốn)</p>
 <p style="color: red; font-size: 35px;">Cú pháp chung</p>
 <p style="font-size: 25px;">selector: Pseudo-classes { <br>
     /*khối lệnh css*/ <br>
     property:value <br>
 }</p>
-<p id="vd">Ví dụ:</p>
-<p class="line">Xin chào</p>
-<p id="line1">Hãy di chuột vào em</p>
-<a href="https://facebook.com" class="click" target="_blank">phở bò nam định</a>
+<p id="vd" style="color: red; font-size: 30px;">Ví dụ:</p>
+<p class="line" style="color:blue; font-size: 25px;">Xin chào</p>
+<p id="line1" style="color:blue; font-size: 25px;">Hãy di chuột vào em</p>
+<a href="https://facebook.com" class="click" target="_blank">phở bò nam định</a> <br>
 <a href="https://vietnamnet.vn/" class="click" target="_blank">phở bò nam định</a>
+<div class="elm">abc</div>
+<h1>nỗ lực phi thường</h1>
+<ul>
+    <li>
+        <a href="#mobai">chuyển đến mở bài</a>
+    </li>
+    <li>
+        <a href="#thanbai">chuyển đến thân bài</a>
+    </li>
+    <li>
+        <a href="#ketbai">chuyển đến kết bài</a>
+    </li>
+</ul>
+<h2 id="mobai">mở bài</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laborum tempore velit quasi accusamus vero quibusdam blanditiis totam odio dolorum, consectetur aliquid magnam nulla! Eligendi nostrum quia ratione excepturi aliquid.
+Dolorem eaque repudiandae perferendis in ut ex voluptatibus ad sapiente excepturi non veritatis deserunt ab alias nostrum nam magnam suscipit assumenda error beatae autem est, possimus, soluta voluptates. Excepturi, impedit!
+Unde et consequatur incidunt cupiditate commodi ad, voluptate illo, quia, repellendus totam suscipit dolores. Aperiam repellendus consequatur veritatis! Pariatur modi aliquam itaque mollitia sunt harum maxime doloribus saepe qui veritatis.
+Nesciunt recusandae quidem, qui modi adipisci quae vitae blanditiis odio tempore consectetur ipsa molestiae quas rem autem vel minus itaque voluptas! At, qui! Necessitatibus, quo. Amet corporis officiis fuga mollitia.</p>
+<h2 id="thanbai">thân bài</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti enim natus repellat sint iste voluptate molestiae. Molestias qui consequuntur maiores harum optio doloribus mollitia ducimus odit quidem commodi. Impedit?
+At et incidunt earum? Delectus magnam in est recusandae, ducimus obcaecati aspernatur nesciunt quidem adipisci, numquam harum natus esse architecto voluptatum! Cum, excepturi rem harum mollitia natus facilis possimus officiis?
+Minus quisquam quos enim commodi quod odio nesciunt est aliquam fuga repudiandae quam tenetur totam magnam molestias, impedit explicabo, voluptas accusamus odit quae expedita. Doloremque maiores voluptatibus voluptas tempore iste?
+Dolorem sequi, debitis molestiae veritatis velit at aperiam voluptate deserunt minus vero earum qui suscipit quam quae maxime quos distinctio facere similique quasi adipisci id? Tempora consequuntur explicabo atque tempore.
+Sint sunt harum odio eveniet rerum eius, cumque recusandae, ducimus consequatur expedita magni totam nulla, odit quibusdam ea magnam sapiente quidem officia reprehenderit cum facere tempora! Ad provident aliquam itaque.
+Incidunt reiciendis hic porro? Voluptas nemo repellat, cupiditate voluptatum minima deserunt accusamus reiciendis quos quam adipisci atque repellendus omnis ratione sequi corrupti recusandae, dolores architecto modi rerum! Cumque, quis laboriosam.
+Odio quos aliquid quibusdam vel quis deleniti ipsam consectetur, numquam, omnis veniam temporibus fugiat id aliquam tempore corporis autem quam ducimus! Consequatur incidunt animi eaque esse repellat sequi debitis eum?
+Illum voluptas quasi reiciendis maiores! Beatae at quibusdam, nam rem omnis ea illo, suscipit alias et perspiciatis dignissimos assumenda dolorum eligendi ducimus velit dolore error ullam mollitia voluptas. Quia, saepe.</p>
+<h2 id="ketbai">kết bài</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus libero debitis fuga inventore aliquid alias, porro culpa, illum placeat minus provident iusto ab totam facere illo repellendus itaque optio. Neque.
+Modi molestias sed quae laboriosam a eius harum fuga maiores repellendus, labore adipisci libero porro fugit commodi omnis quidem velit perferendis recusandae obcaecati. Consequuntur soluta delectus vero ducimus voluptates molestias?
+Qui quaerat enim accusamus expedita explicabo? Hic alias exercitationem et, saepe placeat eum veritatis, ex nobis ipsam omnis sunt molestiae quisquam pariatur esse distinctio sint vitae animi reiciendis doloribus incidunt?
+Sed beatae magni, veritatis id omnis eius debitis? Doloremque quisquam qui excepturi facilis ea! Facilis magni officiis modi animi. Veritatis, numquam ipsum? Quia reprehenderit voluptatibus laboriosam dolore soluta iusto nesciunt.</p>
+
 <h2>1.:hover</h2>
 <img src="img/anh1.png" alt="anh1" width="900">
 <h2>2.:active</h2>
 <img src="img/anh2.png" alt="anh2" width="900">
 <h2>3.:link + :visited</h2>
 <img src="img/anh3.png" alt="anh3" width="900">
+<h2>5.:empty</h2>
+<img src="img/anh4.png" alt="anh4" width="900">
+<h2>6.:target</h2>
+<img src="img/anh5.png" alt="anh5" width="900">
+<h2>7.:first-child</h2>
+<img src="img/anh6.png" alt="anh6" width="900">
+<h2>8.:last-child</h2>
+<img src="img/anh7.png" alt="anh7" width="900">
+<h2>9.:nth-child(n)</h2>
+<img src="img/anh8.png" alt="anh8" width="900">
+<h2>10.:nth-last-child</h2>
+<img src="img/anh9.png" alt="anh9" width="900">
+<h2>11.:only-child</h2>
+<img src="img/anh10.png" alt="anh10" width="900">
+<h2>12.:first-of-type</h2>
+<img src="img/anh11.png" alt="anh11" width="900">
+<h2>13.:last-of-type</h2>
+<img src="img/anh13.png" alt="anh13" width="900">
+<h2>14.:nth-of-type</h2>
+<img src="img/anh14.png" alt="anh14" width="900">
+<h2>16:only-of-type</h2>
+<img src="img/anh16.png" alt="anh16" width="900">
+<h2>17:not(selector)</h2>
+<img src="img/anh17.png" alt="anh17" width="900">
+<h2>Thứ tự ưu tiên CSS selector</h2>
+<img src="img/anh1a.png" alt="anh1a" width="900">
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
